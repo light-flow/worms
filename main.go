@@ -285,5 +285,8 @@ func solveSudoku(board [][]byte) {
 }
 func main() {
 	subsets([]int{1, 2, 3})
+	nums := []int{5, 3, 8, 10, 8, 7}
+	nums = utils.MergeSort(nums)
+	fmt.Println(nums)
 	fmt.Println(solveNQueens(4))
 }
